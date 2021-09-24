@@ -1088,22 +1088,22 @@ void process_button(Xbox* xbox, JOYCON_REGION region, JOYCON_BUTTON button) {
     case RIGHT_BUTTONS:
       switch(button) {
         case R_BUT_A:
-			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_B;
-          break;
-        case R_BUT_B:
 			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_A;
           break;
-        case R_BUT_X:
-			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_Y;
-          break;
-        case R_BUT_Y:
-			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_X;
-          break;
-        case R_BUT_SL:
+        case R_BUT_B:
 			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_B;
           break;
-        case R_BUT_SR:
+        case R_BUT_X:
+			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_X;
+          break;
+        case R_BUT_Y:
 			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_Y;
+          break;
+        case R_BUT_SL:
+			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_A;
+          break;
+        case R_BUT_SR:
+			xbox->right_buttons = xbox->right_buttons | XUSB_GAMEPAD_X;
           break;
       }
       break;
